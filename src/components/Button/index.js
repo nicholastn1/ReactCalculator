@@ -1,12 +1,9 @@
+import { ButtonContainer } from "./style";
 
-import { ButtonContainer } from './styles';
+const Button = ({ label, onClick }) => {
+  console.log("🚀 ~ file: index.js ~ line 4 ~ Button ~ label", label);
+  console.log("🚀 ~ file: index.js ~ line 4 ~ Button ~ onClick", onClick);
+  return <ButtonContainer onClick={onClick}>{label}</ButtonContainer>;
+};
 
-const Button = ({label, onClick}) => {
-    return (
-      <ButtonContainer onClick={onClick} type="button">
-       {label}
-      </ButtonContainer>
-    );
-  }
-  
-  export default Button;
+export default Button;
